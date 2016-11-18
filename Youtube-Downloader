@@ -1,0 +1,60 @@
+#!/bin/bash
+
+echo
+echo         \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \                                             ===========================================
+echo -e \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \                   =  "\e[01;30;91m Install Youtube-dl-------and ENJOY!!!!\e[0m" =
+echo         \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \                                     ===========================================
+#sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+#sudo chmod a+rx /usr/local/bin/youtube-dl
+#sudo apt-get install sysvbanner
+sleep 3
+clear
+echo
+echo
+echo =============================================================================================
+screenfetch
+echo
+echo -e         \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \         "\e[01;31;92m Download Your YouTube Video - 2016\e[0m"
+echo
+echo -e      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \         "\e[01;31;92m Using YouTube-dl - 2016\e[0m"
+echo
+echo -e \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\e[01;30;91m BY BAYOO\e[0m \e[01;31;92m - Architect-WorkStation\e[0m" 
+echo
+echo -e \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\e[01;30;91m BY GitHub\e[0m \e[01;31;92m - YouTube-dl Source Code included\e[0m" 
+echo =============================================================================================
+echo
+echo
+cal
+echo
+echo
+echo -e "\e[01;31;95m Paste Your Browser LINK.....and Press Enter to Start\e[0m"
+echo
+if read -t 10 text; then
+echo
+sleep 3 
+echo
+echo 
+echo -e "\e[01;31;95m Your Video file will start download right now !!!!\e[0m"
+echo
+banner "Download.."
+youtube-dl $text
+
+
+else
+        echo -e "\e[01;30;91m Nothing to do arround will go to sleep ..;)\e[0m"
+echo
+echo
+banner                        " BYE BYE "
+exit
+fi
+
+sleep 2
+echo
+echo
+echo
+echo -e \ \ \ "Video have been downloaded Successfully 100% - \e[01;32;91m BY BAYOO\e[0m"
+banner "Done"
+exit
+
+#BY B@YOO 2016
+
